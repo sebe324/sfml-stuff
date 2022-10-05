@@ -29,7 +29,7 @@ int main(){
             std::cout<<"wpisany znak ASCII: "<<static_cast<char>(event.text.unicode)<<std::endl;
             break;
               case sf::Event::MouseWheelScrolled:
-                    if(event.mouseWheelScroll.wheel=sf::Mouse::VerticalWheel) std::cout<<"wheel type: vertical" << std::endl;
+                    if(event.mouseWheelScroll.wheel==sf::Mouse::VerticalWheel) std::cout<<"wheel type: vertical" << std::endl;
                     else if(event.mouseWheelScroll.wheel=sf::Mouse::HorizontalWheel) std::cout<<"wheel type: horizontal" << std::endl;
                     else std::cout<<"wheel type: unknown"<<std::endl;
                 break;
